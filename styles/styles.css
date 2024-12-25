@@ -1,0 +1,156 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,900&family=Miniver&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* variables */
+:root {
+    --primary-color: #5da1fe;
+    --dark-color: #0f0f0f;
+    --gray-color: gray;
+    --white-color:white;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px;
+}
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* global css */
+section {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn-orange {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-orange {
+    color: var(--primary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.fs-7 {
+    font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* css per section */
+
+/* navbar */
+.navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link.active {
+    color: var(--primary-color);
+}
+
+.header-section .header-title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.header-section .header-skill {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.header-section .header-skill:hover {
+    color: var(--primary-color);
+}
+
+.header-section .header-skill i {
+    transition: 0.3s;
+}
+
+.header-section .header-skill:hover i {
+    transform: rotate(-45deg);
+}
+
+.header-section .header-img {
+    width: 90%;
+}
+
+/*About*/
+.about-section {
+    background-color: #5da1fe;
+}
+.about-section {
+    text-align: center;
+}
+
+/*Project Experience*/
+.project-experience-section .card .card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .project-experience-section .card .card-img-top {
+        height: 100px;
+    }
+}
+
+/*SKILLS*/
+.skills-section {
+    background-color: var(--dark-color);
+}
+
+.skills-section .progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+
+.skills-section .progress-bar .progress {
+    background-color: var(--primary-color);
+}
+
+.skills-section .btn-next-prev {
+    display: flex;
+    margin-top: 5px; 
+}
+
+
+
+
+
